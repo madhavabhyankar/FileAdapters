@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileAdapters", "src\FileAdapters\FileAdapters.csproj", "{2B8142B8-6934-4800-850B-BB0F90A06444}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileAdapters.Demo", "src\FileAdapters.Demo\FileAdapters.Demo.csproj", "{726FAA75-441B-43B0-B7D3-716FD1A7FE41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B8142B8-6934-4800-850B-BB0F90A06444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B8142B8-6934-4800-850B-BB0F90A06444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B8142B8-6934-4800-850B-BB0F90A06444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B8142B8-6934-4800-850B-BB0F90A06444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{726FAA75-441B-43B0-B7D3-716FD1A7FE41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{726FAA75-441B-43B0-B7D3-716FD1A7FE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{726FAA75-441B-43B0-B7D3-716FD1A7FE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{726FAA75-441B-43B0-B7D3-716FD1A7FE41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
