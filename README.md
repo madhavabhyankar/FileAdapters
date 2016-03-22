@@ -5,7 +5,7 @@ This library is useful when creating files over SFTP / FTP or physical file shar
 
 Usage:
 
-public class Demo
+        public class Demo
         {
             public void Write(Exception ex)
             {
@@ -24,6 +24,5 @@ public class Demo
                 Overwrite = true,
                 Location = @"C:\ddalkajsldkjf\alksdjlfkajsd\"
             });
-
             filePipeLine.WriteFile("Dummy!");
         }
