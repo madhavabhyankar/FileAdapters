@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FileCreationStrategies\FTPStrategy.cs" />
+    <Compile Include="FileCreationStrategies\IFTPStrategy.cs" />
     <Compile Include="FileCreationStrategies\ISFTPStrategy.cs" />
     <Compile Include="FileCreationStrategies\PhysicalLocalDriveStrategy.cs" />
     <Compile Include="FileCreationStrategies\SFTPStrategy.cs" />

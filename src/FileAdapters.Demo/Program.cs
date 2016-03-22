@@ -23,11 +23,23 @@ namespace FileAdapters.Demo
             var demo = new Demo();
             filePipeLine.AddStrategy(new PhysicalLocalDriveStrategy
             {
-                FileName = "DemoFile",
+                FileName = "DemoFile.txt",
                 CreateDirectoryIfDoesntExist = false,
                 ExceptionHandler = demo.Write,
                 Overwrite = true,
-                Location = @"C:\ddalkajsldkjf\alksdjlfkajsd\"
+                Location = @"C:\FileTransfers\"
+            });
+
+            filePipeLine.AddStrategy(new FTPStrategy
+            {
+                Host = "ftpserver.dummy.com",
+                Port = 21,
+                ExceptionHandler = demo.Write,
+                FileName = "Dummy.txt",
+                Directory = "dummerlocation",
+                Overwrite = true,
+                Username = "smartuser",
+                Password = "password"
             });
 
             filePipeLine.WriteFile("Dummy!");
