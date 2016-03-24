@@ -34,12 +34,14 @@ namespace FileAdapters.FileCreationStrategies
             using (var client = new SftpClient(Host,Port,Username,Password))
             {
                 client.Connect();
+                client.ChangeDirectory(Directory);
                 client.BufferSize = 4*1024;
+                
                 if (client.Exists(pathToWriteTo) && !Overwrite)
                 {
                     throw new Exception("File by that name already exists");
                 }
-                client.WriteAllText(FileName, data);
+                client.WriteAllText(pathToWriteTo, data);
                 
             }
 

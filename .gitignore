@@ -6,6 +6,9 @@
 *.user
 *.sln.docstates
 
+# nuget packages
+*.FileAdapters.*
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -187,3 +190,4 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+src/FileAdapters/FileAdapters.1.0.0.1.nupkg

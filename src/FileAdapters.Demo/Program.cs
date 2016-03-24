@@ -41,7 +41,17 @@ namespace FileAdapters.Demo
                 Username = "smartuser",
                 Password = "password"
             });
-
+            filePipeLine.AddStrategy(new SFTPStrategy
+            {
+                ExceptionHandler = demo.Write,
+                FileName = "dummy.txt",
+                Directory = @"/Test",
+                Port = 22,
+                Overwrite = true,
+                Password = "password",
+                Username = "sftp",
+                Host = "dada.com"
+            });
             filePipeLine.WriteFile("Dummy!");
         }
 
